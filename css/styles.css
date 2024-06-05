@@ -13,6 +13,7 @@
 html{
     box-sizing: border-box;
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 *, *::before, *::after{
@@ -64,6 +65,11 @@ img{
     text-align: center;
 }
 
+.black{
+    background-color: #0b0c0d;
+}
+
+
 .btn{
     text-transform: uppercase;
     display: block;
@@ -72,7 +78,6 @@ img{
     font-weight: 900;
     background-color: var(--secondary);
     color: var(--white);
-    border: 1px solid var(--gray);
     border-radius: .5rem;
     padding: 1rem;
     transition:ease-out;
@@ -81,6 +86,11 @@ img{
 
 .btn:hover{
     background-color: #12c255;
+}
+
+.btn-search{
+    position: relative;
+    right: 2.5rem;
 }
 
 /* Header */
@@ -110,14 +120,16 @@ img{
 }
 
 .search input{
-    width: 100%;
+    width: 90%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
 }
 
 @media (min-width:768px) {
     .search input{
         width: 40rem;
         padding: 1rem;
-        margin: 0;
     }
 }
 
@@ -179,4 +191,35 @@ img{
 .title{
     font-size: 2.5rem;
     font-weight: 900;
+}
+
+/* Up */
+.up{
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.up i{
+    padding: 2rem;
+    border: 1px solid var(--gray);
+    border-radius: 3rem; 
+    position: relative;
+    right: 3rem;
+}
+
+/* Footer*/
+.footer{
+    font-family: var(--sourceMain);
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--white);
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+}
+
+.footer p{
+    margin: 0;
 }

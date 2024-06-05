@@ -6,7 +6,7 @@ const btn = document.querySelector(".btn")
 
 enlace.addEventListener("click", ()=>{
     enlace.href = "#header"
-    html.style.scrollBehavior = "smooth"
+    html.style.scrollBehavior = "smooth";
 })
 
 modeDark.addEventListener("click", ()=>{

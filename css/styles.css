@@ -220,6 +220,109 @@ img{
     height: 10rem;
 }
 
-.footer p{
-    margin: 0;
+/* Formulario */
+.container-form{
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-content{
+    width: 100%;
+    max-width: 45rem;
+    background-color: #2C2F35;
+    padding: 50px 60px 70px;
+    text-align: center;
+    border-radius: 2.5rem;
+}
+
+.form-content h1{
+    font-size: 3rem;
+    margin-bottom: 6rem;
+    color: var(--white);
+    position: relative;
+}
+
+.form-content h1::after{
+    content: "";
+    width: 3rem;
+    height: 4px;
+    border-radius: 3px;
+    background-color: #04BD7D;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.input-field{
+    background-color: #515966;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+
+input{
+    width: 100%;
+    background: transparent;
+    border:0;
+    outline: none;
+    padding: 18px 15px;
+    color: var(--white);
+}
+
+input::placeholder{
+    color: var(--white);
+}
+
+.input-field i{
+    margin-left: 15px;
+    color: #04BD7D;
+}
+
+
+form p{
+    color: var(--white);
+    text-align: left;
+    font-family: 13px;
+}
+
+form p a{
+    color: #04BD7D;
+    margin-left: 5px;
+}
+
+.btn-field{
+    width: 100%;
+}
+
+.btn-field button{
+    font-size: 16px;
+    background-color: #04BD7D;
+    color: var(--white);
+    height: 4rem;
+    border-radius: 1rem;
+    border: 0;
+    outline:0;
+    cursor: pointer;
+    transition: background 1s;
+    width: 100%;
+}
+
+.input-group{
+    height: 25rem;
+}
+
+.login{
+    height: 21rem;
+}
+
+.btn-field button.disable{
+    background-color: #eaeaea;
+    color: #2C2F35;
 }
